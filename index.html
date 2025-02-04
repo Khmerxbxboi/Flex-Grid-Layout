@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grid Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .header {
+            background: #dff1ff;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #004aad;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background: #71e5b8;
+            padding: 15px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">The Life Flex Grid Design</div>
+    <div class="nav">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </div>
+    <div class="gallery">
+        <img src="Cambodia_001.jpg" alt="Image 1">
+        <img src="Cambodia_002.jpg" alt="Image 2">
+        <img src="Cambodia_003.jpg" alt="Image 3">
+        <img src="Cambodia_004.jpg" alt="Image 4">
+        <img src="Cambodia_005.jpg" alt="Image 5">
+    </div>
+</body>
+</html>
